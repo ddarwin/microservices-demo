@@ -85,8 +85,8 @@ func main() {
 
 	// Initialize the New Relic GoLang agent
 	app, err := newrelic.NewApplication(
-		newrelic.ConfigAppName("Hipster Shop"),
-		newrelic.ConfigLicense("c2f4097614b826f3a07337d7c887ccb361a04a68"),
+		newrelic.ConfigAppName(<NEW_RELIC_APP_NAME>),
+		newrelic.ConfigLicense(<NEW_RELIC_LICENSE_KEY>),
 		newrelic.ConfigDistributedTracerEnabled(true),
 	)
 
